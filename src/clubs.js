@@ -12,6 +12,19 @@ var DB = {
                 international: 0,
             },
             payrool: 1500000.00,
+        },    
+        {
+            id: 2,
+            name: "Sport Club Internacional",
+            city: "Porto Alegre",
+            state: "Rio Grande do Sul",
+            division: "A",
+            title: {
+                state: 51,
+                nacional: 4,
+                international: 7,
+            },
+            payrool: 7000000.00,
         },
     ],
 };

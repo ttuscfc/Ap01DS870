@@ -76,4 +76,21 @@ router.post("/newClub", (req, res) => {
     }
 });
 
+router.delete("/delete/:id", (req, res) => {
+    var club = DB.clubs.find(c => c.id == req.params.id);
+    var isValid = false;
+    if (club != undefined) {
+        var index = DB.clubs.indexOf(club);
+        if (index > -1) {
+            DB.clubs.splice(index, 1);
+            isValid = true;
+        }
+    }
+    if (isValid) {
+        res.status(200).json({ msg: "Time excluido com sucesso." });
+    } else {
+        res.status(400).json({ msg: "Time de id '" + req.params.id + "' não encontrado" });
+    }
+});
+
 module.exports = router;
