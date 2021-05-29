@@ -22,7 +22,7 @@ Ele solicita as seguintes funções:
 
 - [x] Edição de um time –permitindo atualizar qualquer um dos campos
 
-- [ ] Remoção de um time –permitindo deletar um time fornecido a partir do ID.
+- [x] Remoção de um time –permitindo deletar um time fornecido a partir do ID.
 
 - [ ] A equipe deve criar endpointspara todos as possíveis ações fornecidas pela API.
 
