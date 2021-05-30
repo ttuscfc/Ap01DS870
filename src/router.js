@@ -57,7 +57,7 @@ router.post("/newClub", (req, res) => {
     } = req.body;
     if (name && city && state && title && payrool != undefined) {
         if (division == "A" || division == "B" || division == "C" || division == "") {
-            const id = DB.clubs.length + 1;
+            const id = DB.clubs[DB.clubs.length - 1].id + 1;
             DB.clubs.push({
                 id,
                 name,
